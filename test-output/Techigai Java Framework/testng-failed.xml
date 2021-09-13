@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Techigai Java Framework]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="GO Daddy SIte(failed)">
+    <parameter name="sUrl" value="https://www.godaddy.com/"/>
+    <parameter name="browserType" value="ie"/>
+    <classes>
+      <class name="TestCases.TS_GoDaddy">
+        <methods>
+          <include name="SetBrowserAndNavigateToUrl1"/>
+          <include name="closeBrowser"/>
+          <include name="testCase1"/>
+        </methods>
+      </class> <!-- TestCases.TS_GoDaddy -->
+    </classes>
+  </test> <!-- GO Daddy SIte(failed) -->
+  <test thread-count="5" name="Herokuapp(failed)">
+    <parameter name="sUrl" value="https://the-internet.herokuapp.com/"/>
+    <parameter name="browserType" value="ie"/>
+    <classes>
+      <class name="TestCases.TS_Herokuapp_FileUplaodDownlaodAndFrames">
+        <methods>
+          <include name="iframes"/>
+          <include name="SetBrowserAndNavigateToUrl1"/>
+          <include name="closeBrowser"/>
+          <include name="herokuappNestedFrames"/>
+          <include name="testCase9"/>
+        </methods>
+      </class> <!-- TestCases.TS_Herokuapp_FileUplaodDownlaodAndFrames -->
+    </classes>
+  </test> <!-- Herokuapp(failed) -->
+</suite> <!-- Failed suite [Techigai Java Framework] -->
